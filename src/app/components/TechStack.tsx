@@ -52,10 +52,8 @@ export function TechStack() {
     {
       category: "Cloud & DevOps",
       skills: [
-        { name: "AWS", level: 80, icon: "☁️" },
         { name: "Docker", level: 85, icon: "🐳" },
-        { name: "Git/GitHub", level: 90, icon: "🐙" },
-        { name: "Kubernetes", level: 75, icon: "☸️" }
+        { name: "Git/GitHub", level: 90, icon: "🐙" }
       ]
     }
   ];

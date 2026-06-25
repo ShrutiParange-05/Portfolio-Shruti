@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Mail, Github, Linkedin, Send, MessageSquare, Phone } from 'lucide-react';
+import { Mail, Github, Linkedin, Send, MessageSquare } from 'lucide-react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -152,7 +152,6 @@ export function Contact() {
               <div className="space-y-3">
                 {[
                   { icon: Mail, label: "shrutiparange5@gmail.com", href: "mailto:shrutiparange5@gmail.com", color: "from-cyan-400 to-cyan-600" },
-                  { icon: Phone, label: "+91 8767441729", href: "tel:+918767441729", color: "from-cyan-400 to-cyan-600" },
                   { icon: Github, label: "GitHub Profile", href: "https://github.com/ShrutiParange-05", color: "from-cyan-400 to-cyan-600" },
                   { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/shruti-parange-b9a02b341/", color: "from-cyan-400 to-cyan-600" }
                 ].map((social, index) => (
