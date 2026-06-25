@@ -9,8 +9,7 @@ export function TechStack() {
         { name: "Python", level: 95, icon: "🐍" },
         { name: "C++", level: 85, icon: "⚡" },
         { name: "SQL", level: 90, icon: "🗃️" },
-        { name: "JavaScript", level: 85, icon: "📜" },
-        { name: "Solidity", level: 80, icon: "⛓️" }
+        { name: "JavaScript", level: 85, icon: "📜" }
       ]
     },
     {
