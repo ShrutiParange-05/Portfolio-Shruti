@@ -52,7 +52,9 @@ export function TechStack() {
       category: "Cloud & DevOps",
       skills: [
         { name: "Docker", level: 85, icon: "🐳" },
-        { name: "Git/GitHub", level: 90, icon: "🐙" }
+        { name: "Git/GitHub", level: 90, icon: "🐙" },
+        { name: "MLflow", level: 80, icon: "📊" },
+        { name: "Vercel", level: 85, icon: "▲" }
       ]
     }
   ];

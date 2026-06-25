@@ -33,8 +33,8 @@ export function Contact() {
       });
       const data = await response.json();
       if (response.ok && data.success === "true") {
-        toast.success("Message launched successfully!", {
-          description: "Thank you for reaching out. I'll get back to you soon!",
+        toast.success("Message sent successfully!", {
+          description: "Thank you for reaching out. I'll get back to you within 24 hours!",
         });
         setFormData({ name: '', email: '', message: '' });
       } else {
@@ -69,7 +69,7 @@ export function Contact() {
             Let's Connect<span className="text-cyan-400">.</span>
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-            Ready to collaborate on the next big AI innovation? Let's build something amazing together.
+            Open to full-time AI/ML roles, research collaborations, and freelance projects. I typically respond within 24 hours.
           </p>
         </motion.div>
 
@@ -129,7 +129,7 @@ export function Contact() {
                     className="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-bold disabled:bg-gray-800 disabled:text-gray-500 cursor-pointer disabled:cursor-not-allowed transition-all"
                   >
                     <Send className={`mr-2 ${isSubmitting ? 'animate-pulse' : ''}`} size={16} />
-                    {isSubmitting ? "Launching..." : "Launch Message"}
+                    {isSubmitting ? "Sending..." : "Send Message"}
                   </Button>
                 </form>
               </CardContent>
@@ -189,7 +189,7 @@ export function Contact() {
           className="text-center mt-16 pt-8 border-t border-gray-700/50"
         >
           <p className="text-gray-500">
-            © 2025 Shruti Parange. Engineering the future with AI.
+            © 2026 Shruti Parange. Engineering the future with AI.
           </p>
         </motion.div>
       </div>

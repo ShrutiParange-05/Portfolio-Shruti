@@ -22,7 +22,7 @@ export function Projects() {
     {
       title: "Guardian-AI",
       category: "AI security",
-      description: "A production LLM security platform that stops AI attacks before they happen.",
+      description: "Full-stack LLM security platform (React + FastAPI) defending against prompt injection, jailbreaking, PII leakage, and RAG poisoning — reducing threat detection latency by ~40%. OWASP LLM Top 10 compliant.",
       metric: "OWASP LLM Top 10 compliant (verified via LLM-Fuzzer)",
       icon: Shield,
       tech: ["React", "FastAPI", "LLM Security", "RAG", "PII Detection"],
