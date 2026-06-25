@@ -8,7 +8,7 @@ export function Experience() {
       title: "AI Security Intern",
       company: "Audix Technology · Mumbai, India",
       period: "Dec 2025 – Feb 2026 · 3 months",
-      description: "Developed GuardianAI, a full-stack AI security platform using React.js and FastAPI to protect Large Language Models (LLMs) and AI Agents against 4 adversarial attack vectors – prompt injection, jailbreaking, PII leakage, and RAG poisoning – reducing threat detection latency by ~40% through real-time request interception pipelines. Built monitoring and validation logic for secure LLM workflows, improving model safety, response filtering, and automated detection of sensitive data leakage.",
+      description: "Developed GuardianAI, a full-stack AI security platform using React.js and FastAPI to protect LLMs against 4 adversarial attack vectors (prompt injection, jailbreaking, PII leakage, RAG poisoning) — reducing threat detection latency by ~40%. Built monitoring and validation logic for secure LLM workflows.",
       icon: Briefcase,
       skills: ["React.js", "FastAPI", "Python", "LLM Security", "OWASP"]
     },
@@ -16,7 +16,7 @@ export function Experience() {
       title: "Data Analyst Intern",
       company: "Cognifyz Technologies · India (Remote)",
       period: "June 2025 – July 2025 · 2 months",
-      description: "Performed EDA and data preprocessing across a 9-task pipeline on restaurant datasets using Python (Pandas, NumPy, Matplotlib), including cuisine frequency analysis, geospatial clustering, rating distribution, NLP-based sentiment analysis, and price-range correlation. Prepared charts, reports, and structured insights to support data-driven decision-making and downstream analysis.",
+      description: "Performed EDA and data preprocessing across a 9-task pipeline on restaurant datasets using Python (Pandas, NumPy, Matplotlib), including geospatial clustering, NLP-based sentiment analysis, and price-range correlation. Prepared charts and structured insights to support data-driven decision-making.",
       icon: TrendingUp,
       skills: ["Python", "Pandas", "Matplotlib", "NLP", "Data Visualization"]
     },
@@ -59,9 +59,8 @@ export function Experience() {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8, delay: index * 0.3 }}
               viewport={{ once: true }}
-              className={`relative flex items-center mb-16 ${
-                index % 2 === 0 ? 'justify-end md:justify-start' : 'justify-end'
-              }`}
+              className={`relative flex items-center mb-16 ${index % 2 === 0 ? 'justify-end md:justify-start' : 'justify-end'
+                }`}
             >
               {/* Timeline node */}
               <motion.div
@@ -87,10 +86,10 @@ export function Experience() {
                       <p className="text-cyan-400">{exp.company}</p>
                     </div>
                   </div>
-                  
+
                   <p className="text-cyan-300 text-sm mb-3">{exp.period}</p>
                   <p className="text-gray-300 mb-4">{exp.description}</p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {exp.skills.map((skill) => (
                       <span

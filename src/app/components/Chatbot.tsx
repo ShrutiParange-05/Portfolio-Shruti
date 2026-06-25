@@ -30,7 +30,7 @@ export function Chatbot() {
 
   const getBotResponse = (input: string) => {
     const lowerInput = input.toLowerCase();
-    
+
     if (lowerInput.includes('skill') || lowerInput.includes('tech') || lowerInput.includes('stack')) {
       return "Shruti is highly skilled in Python, SQL, and React. Her AI toolkit includes Llama 3, LangChain, TensorFlow, and PyTorch, with a specialized focus on AI Security and Generative AI.";
     } else if (lowerInput.includes('experience') || lowerInput.includes('work') || lowerInput.includes('intern')) {
@@ -40,7 +40,7 @@ export function Chatbot() {
     } else if (lowerInput.includes('supportsphere') || lowerInput.includes('support sphere') || lowerInput.includes('customer service bot') || lowerInput.includes('support bot')) {
       return "Customer Support RAG Bot is a production-grade RAG chatbot with ChromaDB semantic search and LangChain orchestration, deployed via Docker and FastAPI.";
     } else if (lowerInput.includes('agent')) {
-      return "Shruti builds AI agents! Her portfolio includes the Customer Support RAG Bot, which is built using LangChain orchestration and ChromaDB.";
+      return "Shruti builds AI agents! Her portfolio includes the Multi-PDF ChatApp AI Agent, which enables natural language conversations across documents using RAG.";
     } else if (lowerInput.includes('security') || lowerInput.includes('guardian') || lowerInput.includes('shield')) {
       return "AI Security is her core expertise. Projects include Guardian-AI (an LLM Security Platform), ShieldAI for catching code vulnerabilities, and a BERT-based Phishing Detection system.";
     } else if (lowerInput.includes('ml model') || lowerInput.includes('prediction') || lowerInput.includes('recommend')) {
@@ -100,11 +100,11 @@ export function Chatbot() {
         className={`fixed bottom-6 right-6 w-16 h-16 rounded-full bg-gray-900 border-2 border-cyan-500/50 shadow-[0_0_15px_rgba(34,211,238,0.5)] z-50 ${isOpen ? 'hidden' : 'flex'} items-center justify-center cursor-pointer`}
       >
         <motion.div
-          animate={{ 
+          animate={{
             scale: [1, 1.1, 1],
             rotate: [0, 5, -5, 0]
           }}
-          transition={{ 
+          transition={{
             duration: 4,
             repeat: Infinity,
             ease: "easeInOut"
@@ -151,11 +151,10 @@ export function Chatbot() {
             <div className="flex-1 overflow-y-auto p-4 space-y-4">
               {messages.map((msg) => (
                 <div key={msg.id} className={`flex ${msg.sender === 'user' ? 'justify-end' : 'justify-start'}`}>
-                  <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${
-                    msg.sender === 'user' 
-                      ? 'bg-cyan-500 text-black rounded-tr-none' 
+                  <div className={`max-w-[80%] p-3 rounded-2xl text-sm ${msg.sender === 'user'
+                      ? 'bg-cyan-500 text-black rounded-tr-none'
                       : 'bg-gray-800 text-gray-200 rounded-tl-none border border-gray-700'
-                  }`}>
+                    }`}>
                     {msg.text}
                   </div>
                 </div>
@@ -192,7 +191,7 @@ export function Chatbot() {
                   placeholder="Ask something..."
                   className="flex-1 bg-gray-900 text-white placeholder-gray-400 text-sm rounded-lg px-4 py-2 border border-gray-700 focus:outline-none focus:border-cyan-500 transition-colors"
                 />
-                <button 
+                <button
                   type="submit"
                   disabled={!inputValue.trim()}
                   className="bg-cyan-500 hover:bg-cyan-400 disabled:bg-gray-700 disabled:text-gray-500 text-black p-2 rounded-lg transition-colors flex items-center justify-center cursor-pointer"
