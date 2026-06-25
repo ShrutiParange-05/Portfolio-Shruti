@@ -4,7 +4,7 @@ import { Download, ArrowRight, Linkedin, Github } from 'lucide-react';
 import resumePdf from '../../assets/ShrutiParange_resume.pdf';
 
 export function Hero() {
-  const words = ["AI/ML Engineer", "AI Security Researcher", "ML Engineer"];
+  const words = ["AI/ML Engineer", "ML Engineer"];
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [currentText, setCurrentText] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
