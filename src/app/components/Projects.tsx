@@ -5,19 +5,19 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './ui/
 import { Button } from './ui/button';
 
 export function Projects() {
-  const categories = ["All", "Gen AI projects", "AI security", "ML Models", "Agents"];
+  const categories = ["All", "Gen AI projects", "AI security", "ML Models"];
   const [activeCategory, setActiveCategory] = useState("All");
 
   const projects = [
     {
       title: "JobSphere AI",
       category: "Gen AI projects",
-      description: "Next-gen career platform using Gen AI to match talent with opportunities through semantic analysis.",
+      description: "Developed a career platform featuring an AI Resume Optimizer to generate ATS scores, keyword gaps, and STAR-method suggestions via Gemini 1.5 Flash. Built mock interviews and a Node.js/Prisma backend.",
       metric: "95% match accuracy (via synthetic QA evaluation)",
       icon: Briefcase,
-      tech: ["React", "FastAPI", "Gemini Pro", "Pinecone", "LangChain"],
+      tech: ["Next.js", "Node.js", "Prisma", "Gemini AI"],
       gradient: "from-cyan-400 to-cyan-600",
-      github: "#"
+      github: "https://github.com/ShrutiParange-05/JobsphereAI"
     },
     {
       title: "Guardian-AI",
@@ -29,17 +29,6 @@ export function Projects() {
       gradient: "from-cyan-400 to-cyan-600",
       github: "https://github.com/ShrutiParange-05/Guardian-AI"
     },
-    {
-      title: "Multi-PDF ChatApp AI Agent",
-      category: "Gen AI projects",
-      description: "Intelligent RAG-based agent that enables natural language conversations across multiple PDF documents.",
-      metric: "98% retrieval relevance (Ragas framework evaluation)",
-      icon: MessageSquare,
-      tech: ["Python", "Gemini Pro", "LangChain", "FAISS", "Streamlit"],
-      gradient: "from-cyan-500 to-cyan-700",
-      github: "#"
-    },
-
     {
       title: "House Price Prediction",
       category: "ML Models",
@@ -73,21 +62,21 @@ export function Projects() {
     {
       title: "ShieldAI",
       category: "AI security",
-      description: "An LLM that reads your code like a security auditor — catching SQLi and XSS before attackers do.",
+      description: "Privacy-first SAST tool using local Llama 3 via Ollama to detect OWASP Top 10 vulnerabilities in code with zero code exfiltration. Features an auto-remediation engine.",
       metric: "Detects SQLi, XSS vulnerabilities",
       icon: Code,
-      tech: ["Llama 3", "LangChain", "Python", "Prompt Engineering"],
+      tech: ["Llama 3", "Ollama", "Python", "Streamlit"],
       gradient: "from-cyan-400 to-cyan-600",
       github: "https://github.com/ShrutiParange-05/ShieldAI"
     },
 
     {
-      title: "SupportSphere AI Bot",
+      title: "Customer Support RAG Bot",
       category: "Gen AI projects",
-      description: "Intelligent customer service bot capable of understanding and resolving user queries with human-like interactions.",
+      description: "Production-grade RAG chatbot with ChromaDB semantic search and LangChain orchestration. Deployed via Docker/FastAPI with integrated RAGAS and MLflow observability.",
       metric: "Automated 80% of routine queries",
       icon: MessageSquare,
-      tech: ["Python", "Gen AI", "NLP", "LLM"],
+      tech: ["LangChain", "ChromaDB", "FastAPI", "HuggingFace", "Docker", "MLflow"],
       gradient: "from-cyan-400 to-cyan-600",
       github: "https://github.com/ShrutiParange-05/SupportShpere-Ai-Customer-Service-bot"
     }

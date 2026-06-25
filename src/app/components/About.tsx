@@ -62,20 +62,7 @@ export function About() {
               My expertise bridges the gap between complex algorithms and real-world vulnerabilities. Whether it's implementing Zero-Knowledge Machine Learning (ZKML), securing models against adversarial attacks, or developing robust predictive systems, my goal is to ensure the next generation of AI is safe for enterprise deployment.
             </p>
 
-            <div className="flex flex-wrap items-center gap-6 text-gray-400 mt-8 mb-8">
-              <div className="flex items-center space-x-2">
-                <Shield className="text-cyan-400" size={20} />
-                <span>Security-First AI</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Brain className="text-cyan-400" size={20} />
-                <span>Deep Learning & ZKML</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <Code className="text-cyan-400" size={20} />
-                <span>Scalable Architecture</span>
-              </div>
-            </div>
+
 
             <motion.div
               initial={{ opacity: 0 }}

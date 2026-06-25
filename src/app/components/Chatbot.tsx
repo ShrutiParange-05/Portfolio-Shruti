@@ -36,29 +36,29 @@ export function Chatbot() {
     } else if (lowerInput.includes('experience') || lowerInput.includes('work') || lowerInput.includes('intern')) {
       return "She recently worked as an AI Security Intern at Audix Technology building 'Guardian-AI' to defend LLMs against attacks. She also has experience as a Data Analyst Intern at Cognifyz Technologies.";
     } else if (lowerInput.includes('jobsphere')) {
-      return "JobSphere AI is one of Shruti's featured Gen AI projects. It's a next-gen career platform that uses semantic analysis to match talent with opportunities using Gemini Pro and LangChain.";
+      return "JobSphere AI is an AI-powered career platform featuring an AI Resume Optimizer using Gemini 1.5 Flash, built with Next.js, Node.js, and Prisma.";
     } else if (lowerInput.includes('supportsphere') || lowerInput.includes('support sphere') || lowerInput.includes('customer service bot') || lowerInput.includes('support bot')) {
-      return "SupportSphere AI Bot is a Gen AI project that creates an intelligent customer service bot capable of understanding and resolving user queries with human-like interactions.";
+      return "Customer Support RAG Bot is a production-grade RAG chatbot with ChromaDB semantic search and LangChain orchestration, deployed via Docker and FastAPI.";
     } else if (lowerInput.includes('agent')) {
-      return "Shruti builds AI agents! Her portfolio includes the Multi-PDF ChatApp AI Agent, which enables natural language conversations across documents using RAG.";
+      return "Shruti builds AI agents! Her portfolio includes the Customer Support RAG Bot, which is built using LangChain orchestration and ChromaDB.";
     } else if (lowerInput.includes('security') || lowerInput.includes('guardian') || lowerInput.includes('shield')) {
       return "AI Security is her core expertise. Projects include Guardian-AI (an LLM Security Platform), ShieldAI for catching code vulnerabilities, and a BERT-based Phishing Detection system.";
     } else if (lowerInput.includes('ml model') || lowerInput.includes('prediction') || lowerInput.includes('recommend')) {
       return "In the ML Models category, she has developed a House Price Prediction model (94% R² Score) and a Hybrid Movie Recommendation System using collaborative filtering.";
     } else if (lowerInput.includes('gen ai') || lowerInput.includes('generative')) {
-      return "Her Gen AI portfolio includes JobSphere AI, SupportSphere AI Bot, and a Multi-PDF ChatApp Agent using RAG.";
+      return "Her Gen AI portfolio includes JobSphere AI and the Customer Support RAG Bot.";
     } else if (lowerInput.includes('project')) {
-      return "Shruti has projects across 3 main categories: Gen AI (JobSphere, SupportSphere), AI Security (Guardian-AI), and ML Models (House Price Prediction). Which category would you like to hear more about?";
+      return "Shruti has projects across 3 main categories: Gen AI (JobSphere, Customer Support RAG Bot), AI Security (Guardian-AI, ShieldAI), and ML Models (House Price Prediction). Which category would you like to hear more about?";
     } else if (lowerInput.includes('education') || lowerInput.includes('study') || lowerInput.includes('college') || lowerInput.includes('degree')) {
       return "She completed her B.E. in Computer Engineering from TPCT's Terna Engineering College (Mumbai University) in May 2026 with an outstanding CGPA of 9.0/10.0.";
     } else if (lowerInput.includes('contact') || lowerInput.includes('email') || lowerInput.includes('hire') || lowerInput.includes('reach')) {
       return "You can reach out to her via email at shrutiparange5@gmail.com or call her at +91 8767441729. You can also connect with her on LinkedIn!";
     } else if (lowerInput.includes('hello') || lowerInput.includes('hi') || lowerInput.includes('hey')) {
-      return "Hello! I'm trained on all of Shruti's projects, including JobSphere, SupportSphere, and Guardian-AI. How can I help you today?";
+      return "Hello! I'm trained on all of Shruti's projects, including JobSphere, the Customer Support RAG Bot, and Guardian-AI. How can I help you today?";
     } else if (lowerInput.includes('resume') || lowerInput.includes('cv')) {
       return "You can download her resume from the Navbar or the Hero section. It contains full details on her AI Security and Gen AI expertise!";
     } else {
-      return "I'm not sure about that specific detail, but I can tell you about her Gen AI projects (like JobSphere and SupportSphere), her AI Security research, or her ML models. Just ask!";
+      return "I'm not sure about that specific detail, but I can tell you about her Gen AI projects (like JobSphere and the Customer Support RAG Bot), her AI Security research, or her ML models. Just ask!";
     }
   };
 
