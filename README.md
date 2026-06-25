@@ -5,7 +5,7 @@
   
   **Live Demo**: [https://portfolioshruti-rho.vercel.app/](https://portfolioshruti-rho.vercel.app/)
   
-  The original project design is available at https://www.figma.com/design/12J3kZzUhWtSnDUXoiRTvt/AI-Engineer-Portfolio-Website--Community-.
+
 
   ## Running the code
 
